@@ -1,14 +1,25 @@
 {
    "scripts": {
       "start": "next",
-      "server": "node server.js"
+      "server": "babel-node server.js",
+      "test": "mocha --require babel-core/register"
    },
    "dependencies": {
+      "chai": "^4.1.2",
       "express": "^4.16.3",
+      "mocha": "^5.2.0",
       "next": "^6.0.3",
       "react": "^16.4.1",
       "react-dom": "^16.4.1",
+      "sinon": "^6.0.0",
       "socket.io": "^2.1.1",
       "socket.io-client": "^2.1.1"
+   },
+   "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-preset-latest": "^6.24.1"
+   },
+   "babel": {
+      "presets": ["latest"]
    }
 }
