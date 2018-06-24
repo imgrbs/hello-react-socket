@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import socket from './socket'
+import socket from '../utils/socket'
 
 class Index extends React.Component {
    state = {
