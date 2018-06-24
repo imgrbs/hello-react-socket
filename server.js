@@ -1,7 +1,6 @@
-
-var app = require('express')();
-var server = require('http').Server(app);
-var io = require('socket.io')(server);
+const app = require('express')();
+const server = require('http').Server(app);
+const io = require('socket.io')(server);
 
 server.listen(3002);
 
@@ -12,4 +11,3 @@ io.on('connection', function (socket) {
     console.log(data);
   });
 });
-     
